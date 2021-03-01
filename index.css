@@ -262,6 +262,7 @@ nav.stroke ul li a:hover:after {
   justify-content: center;
   align-content: center;
   align-items: center;
+  position: absolute;
 }
 .second-rama-text {
   display: flex;
@@ -339,6 +340,8 @@ nav.stroke ul li a:hover:after {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: absolute;
+  overflow: hidden;
   width: 50%;
   margin: 40px;
 }
