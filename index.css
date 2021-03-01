@@ -7,6 +7,25 @@ body {
   width: 100%;
   background: white;
 }
+.demo {
+    width: 550px;
+}
+ul {
+    list-style: none outside none;
+    padding-left: 0;
+    margin-bottom:0;
+}
+li {
+    display: block;
+    float: left;
+    margin-right: 6px;
+    cursor:pointer;
+}
+div.demo img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+}
 .header-all {
   display: flex;
   flex-direction: row;
@@ -29,7 +48,6 @@ body {
 header {
   display: flex;
   flex-direction: row;
-  /* justify-content: center; */
   align-items: center;
   height: 15%;
 }
@@ -285,12 +303,24 @@ nav.stroke ul li a:hover:after {
   background-color: black;
 }
 
+.thirdBackground-img {
+  position: absolute;
+  overflow: hidden;
+  margin-left: 40%;
+}
+.thirdBackPicture-img {
+  width: auto;
+  height: 1000px;
+}
 .third-main {
   display: flex;
-  flex-direction: row;
-  align-content: center;
-  justify-content: center;
+  flex-direction: column;
+  align-content: flex-start;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5%;
   height: 100vh;
+  width: 50%;
 }
 .third-imag {
   display: flex;
@@ -300,57 +330,28 @@ nav.stroke ul li a:hover:after {
 .third-img {
   height: 85vh;
 }
-.third-text {
+.third-text-one {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  width: 50%;
-  margin-left: 500px;
-}
-.third-text-one {
-  font-family: tahoma;
-  font-size: 40px;
-  font-weight: bold;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 5%;
+  margin-left: 80px;
   color: white;
-  letter-spacing: 10px;
-  margin-right: 18px;
+  font-size: 15px;
+  font-family: Courier New;
 }
 .third-text-two {
-  font-family: tahoma;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  margin-top: 60px;
-  letter-spacing: 10px;
-}
-.third-text-three {
-  font-family: tahoma;
-  font-size: 40px;
-  font-weight: bold;
-  color: white;
-  margin-top: 60px;
-  letter-spacing: 10px;
-  margin-left: 12px;
-}
-
-.rama-conteiner {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  overflow: hidden;
-  width: 50%;
-  margin: 40px;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-bottom: 5%;
+  margin-left: 80px;
+  color: white;
+  font-size: 15px;
+  font-family: Courier New;
 }
-.rama {
-  width: 500px;
-  height: 500px; /* Размеры */
-  background: white; /* Цвет фона #fc0*/
-}
-
 
 .fourth {
   display: flex;
@@ -374,9 +375,7 @@ nav.stroke ul li a:hover:after {
   flex-direction: row;
   justify-content: center;
   align-content: flex-end;
-  margin-top: 40px;
-  width: 30%;
-  height: 10%;
+  margin-bottom: 30px;
   color: #BDBDBD;
   font-family: tahoma;
   font-size: 12px;
@@ -479,4 +478,46 @@ span.sim-dot {
   background-color: #BBB;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.popup-fade {
+	display: none;
+}
+.popup-fade:before {
+	content: '';
+	background: #000;
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0.15;
+	z-index: 9999;
+}
+.popup {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+	position: fixed;
+	top: 23%;
+	left: 28%;
+	width: 36%;
+  height: 36%;
+  padding: 4%;
+	background: black;
+	border-radius: 4px;
+	z-index: 99999;
+	opacity: 1;
+  opacity: 0.9;
+}
+
+.textpop {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+.textpop-one {
+  font-size: 18px;
+  color: white;
+  margin-left: 10%;
 }
